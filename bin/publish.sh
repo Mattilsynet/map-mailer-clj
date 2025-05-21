@@ -4,7 +4,6 @@ set -xe
 
 bin/codegen.sh
 
-rm -rf classes/no/mattilsynet/map/email/v1
 rm -f map-mailer-clj.jar
 
 clojure -M:dev:jar

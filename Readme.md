@@ -6,8 +6,13 @@ den, og tilbyr noen Clojure-funksjoner for å jobbe med resultatet.
 
 ## API
 
+Se de respektive proto-filene for oversikt over felter osv. Alle navn er helt
+like som i definisjonen.
+
+[`email.proto` V2](https://github.com/Mattilsynet/map-mailer/blob/master/protos/no/mattilsynet/map/email/v1/email.proto):
+
 ```clj
-(require '[map-mailer.core :as mailer])
+(require '[map-mailer.v2 :as mailer])
 
 (mailer/email->protobuf-bytes
  {:sender_address "christian.johansen@mattilsynet.no"
@@ -18,8 +23,7 @@ den, og tilbyr noen Clojure-funksjoner for å jobbe med resultatet.
             :html "<h1>This is my email</h1>"}})
 ```
 
-For oversikt over felter, se `json_name` på de ymse feltene i
-[email.proto](https://github.com/Mattilsynet/map-mailer/blob/master/protos/no/mattilsynet/map/email/v2/email.proto).
+V2 skal etter sigende ikke brukes nå.
 
 ## Generer kode
 

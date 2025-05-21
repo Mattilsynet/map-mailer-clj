@@ -1,6 +1,6 @@
-(ns map-mailer.core-test
+(ns map-mailer.v2-test
   (:require [clojure.test :refer [deftest is testing]]
-            [map-mailer.core :as mailer]))
+            [map-mailer.v2 :as mailer]))
 
 (def attachment
   {:name "File.csv"

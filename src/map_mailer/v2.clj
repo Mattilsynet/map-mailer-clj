@@ -1,4 +1,4 @@
-(ns map-mailer.core
+(ns map-mailer.v2
   (:import (no.mattilsynet.map.email.v2
             Attachment Attachment$Builder
             Content Content$Builder
